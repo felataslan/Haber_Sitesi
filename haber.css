@@ -1,0 +1,118 @@
+.container-fluid {
+    width: 100%;
+    display: grid;
+    grid-template: 100px 75px 1000px 100px / 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "menu menu"
+        "main sidebar"
+        "footer footer";
+}
+.header {
+
+    height: 140px;
+    grid-area: header;
+    background-color: red;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 3px;
+}
+.header>p {
+    color: darkblue;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    position: relative;
+    bottom: -10px;
+}
+.menu {
+    grid-area: menu;
+    background-color: rgb(194, 32, 32);
+    height: 60px;
+    position: relative;
+    top:20px;
+}
+.menu ul {
+    padding-top: 20px;
+    margin-top: -10px;
+}
+
+.main {
+    grid-area: main;
+    background-color: whitesmoke;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    float: right;
+}
+
+.sidebar {
+    width: 300px;
+    height: 1050px;
+    grid-area: sidebar;
+    background-color: rgb(255, 106, 0);
+    text-align: center;
+    position: relative;
+    top: 25px;
+    right: -20px;
+}
+
+.sidebar .carousel {
+    width: 70%;
+    position: relative;
+    left: 45px;
+
+}
+.footer ul li a {
+    position: relative;
+    top: 10px;
+    letter-spacing: 2px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: darkcyan;
+    position: relative;
+    top: 250px;
+}
+
+li {
+    display: inline;
+    margin-left: 50px;
+}
+
+.footer ul {
+    position: relative;
+    bottom: 180px;
+}
+h1 {
+    text-shadow: 3px 3px 3px black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.baslik {
+    float: right;
+
+}
+pre {
+    position: relative;
+    top: 15px;
+}
+
+b {
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+img {
+    height: 400px;
+    margin-top: 20px;
+}
+
+#img {
+    height: 210px;
+    width: 210px;
+}
